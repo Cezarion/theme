@@ -6,14 +6,13 @@ Thumbs.db
 # Theme
 vendor/
 
+bower_components
 node_modules
-assets/vendor/*
-#assets/css/*main*.css
-assets/js/*scripts*.js
-assets/vendor/modernizr.min.js
-#!assets/vendor/fontawesome/less/variables.less
+npm-debug.log
+
 *.log
 *.map
-#composer.lock
+
+composer.lock
 app/storage/views/*
 dist/
