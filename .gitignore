@@ -11,6 +11,9 @@ assets/vendor/*
 #assets/css/*main*.css
 assets/js/*scripts*.js
 assets/vendor/modernizr.min.js
-!assets/vendor/fontawesome/less/variables.less
+#!assets/vendor/fontawesome/less/variables.less
 *.log
 *.map
+#composer.lock
+app/storage/views/*
+dist/
