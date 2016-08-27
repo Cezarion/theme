@@ -1,0 +1,16 @@
+// Mixins
+
+@mixin remove-sticky-footer() {
+    body {
+        margin-bottom: 0;
+    }
+    .homepage .footer, .footer {
+        height: auto;
+        position: relative;
+        max-height: initial !important;
+        margin-top: 50px;
+    }
+    .spaces-select .footer, .homepage .footer {
+        margin-top: 0;
+    }
+}

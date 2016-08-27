@@ -1,0 +1,48 @@
+/* ==|====================
+   Layout/Layouts
+   ======================= */
+
+// Layout for sticky footer
+// Add the .sticky-footer class to <html>
+// On screen xs remove sticky footer
+
+.sticky-footer{
+    position: relative;
+    min-height: 100%;
+
+    body {
+        margin-bottom: $sticky_size;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: $sticky_size;
+    }
+
+    //remove siticky footer on xs devices
+    @media (max-width: $screen-xs-max) {
+        @include remove-sticky-footer;
+    }
+}
+
+body {
+    @media (max-width: $screen-xs-max) {
+        padding-top: $navbar-height-header + 10;
+    }
+}
+
+.layout-2-cols {
+    @extend .container;
+
+    .content-main{
+        @extend .col-lg-8;
+        @extend .col-md-7;
+    }
+
+    .content-sidebar{
+        @extend .col-lg-4;
+        @extend .col-md-5;
+    }
+}
