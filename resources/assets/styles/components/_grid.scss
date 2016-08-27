@@ -1,16 +1,10 @@
 // Grid system
 .main {
-  @extend %grid-column;
-  @include media-breakpoint-up(sm) {
-    @include make-col($main-sm-columns);
-    .sidebar-primary & {
-      @include make-col($main-sm-columns - $sidebar-sm-columns);
-    }
+  @include make-sm-column($main-sm-columns);
+  .sidebar-primary & {
+    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
   }
 }
 .sidebar {
-  @extend %grid-column;
-  @include media-breakpoint-up(sm) {
-    @include make-col($sidebar-sm-columns);
-  }
+  @include make-sm-column($sidebar-sm-columns);
 }

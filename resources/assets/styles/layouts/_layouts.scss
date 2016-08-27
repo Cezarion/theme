@@ -32,17 +32,3 @@ body {
         padding-top: $navbar-height-header + 10;
     }
 }
-
-.layout-2-cols {
-    @extend .container;
-
-    .content-main{
-        @extend .col-lg-8;
-        @extend .col-md-7;
-    }
-
-    .content-sidebar{
-        @extend .col-lg-4;
-        @extend .col-md-5;
-    }
-}

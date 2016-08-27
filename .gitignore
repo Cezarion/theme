@@ -4,5 +4,8 @@ Thumbs.db
 .idea/
 
 # Theme
-vendor/
+dist
+bower_components
+node_modules
+npm-debug.log
 composer.lock

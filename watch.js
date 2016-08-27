@@ -6,18 +6,12 @@ var webpack = require('webpack'),
 
 // Internal dependencies
 var webpackConfig = require('./webpack.config'),
-    config = require('./ressources/assets/config');
+    config = require('./resources/assets/config');
 
 // Internal variables
-var host = 'http://localhost',
-    port = config.devPort || '3000',
-    compiler;
-
-webpackConfig.output.publicPath = host + ':' + port + config.output.publicPath;
-compiler = webpack(webpackConfig);
+var compiler = webpack(webpackConfig);
 
 browserSync.init({
-  port: port,
   proxy: {
     target: config.devUrl,
     middleware: [
