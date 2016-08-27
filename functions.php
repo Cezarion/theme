@@ -60,7 +60,7 @@ if (!class_exists('THFWK_ThemosisTheme'))
          * @var \THFWK_ThemosisTheme
          */
         protected static $instance = null;
-        
+
         /**
          * Switch that tell if core and datas plugins are loaded.
          *
@@ -82,7 +82,7 @@ if (!class_exists('THFWK_ThemosisTheme'))
         	// Check if framework is loaded.
             $this->check();
         }
-        
+
         /**
     	 * Init the class.
          *
@@ -92,11 +92,11 @@ if (!class_exists('THFWK_ThemosisTheme'))
     	{
     		if (is_null(static::$instance))
             {
-    	    	static::$instance = new static();  
+    	    	static::$instance = new static();
     	    }
     	 	return static::$instance;
     	}
-    	
+
     	/**
          * Trigger by the action hook 'after_switch_theme'.
          * Check if the framework and dependencies are loaded.
@@ -120,7 +120,7 @@ if (!class_exists('THFWK_ThemosisTheme'))
                 return;
             }
     	}
-    	
+
     	/**
          * Display a notice to the user if framework is not loaded.
          *
