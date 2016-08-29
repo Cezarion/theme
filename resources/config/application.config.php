@@ -5,7 +5,7 @@ return [
 	/*
 	* Edit this file in order to configure your application
 	* settings or preferences.
-	* 
+	*
 	*/
 	/* --------------------------------------------------------------- */
 	// Application textdomain
@@ -29,7 +29,7 @@ return [
 
 	/* --------------------------------------------------------------- */
 	// Restrict access to the WordPress Admin for users with a
-	// specific role. 
+	// specific role.
 	// Once the theme is activated, you can only log in by going
 	// to 'wp-login.php' or 'login' (if permalinks changed) urls.
 	// By default, allows 'administrator', 'editor', 'author',
@@ -71,7 +71,12 @@ return [
 		'User'          => 'Themosis\\Facades\\User',
 		'Validator'     => 'Themosis\\Facades\\Validator',
 		'Loop'          => 'Themosis\\Facades\\Loop',
-		'View'	        => 'Themosis\\Facades\\View'
+		'View'	        => 'Themosis\\Facades\\View',
+
+        // Custom ressources
+        'Sage\Asset'        => '\\Roots\\Sage\\Asset',
+        'JsonManifest'      => '\\Roots\\Sage\\Assets\\JsonManifest',
+        'ManifestInterface' => '\\Roots\\Sage\\Assets\\ManifestInterface'
 	]
 
 ];

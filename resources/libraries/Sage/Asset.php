@@ -1,7 +1,6 @@
 <?php namespace Roots\Sage;
 
 use Roots\Sage\Assets\ManifestInterface;
-
 /**
  * Class Template
  * @package Roots\Sage
