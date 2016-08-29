@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Themosis - A framework for WordPress developers.
  * Based on php 5.4 features and above.
@@ -11,30 +12,6 @@
 // The directory separator.
 /*----------------------------------------------------*/
 defined('DS') ? DS : define('DS', DIRECTORY_SEPARATOR);
-
-/**
- * Helper function to setup assets URL
- */
-if (!function_exists('themosis_theme_assets'))
-{
-    /**
-     * Return the application theme assets directory URL.
-     *
-     * @return string
-     */
-    function themosis_theme_assets()
-    {
-        if (is_multisite() && SUBDOMAIN_INSTALL)
-        {
-            $segments = explode('themes', get_template_directory_uri());
-            $theme = (strpos($segments[1], DS) !== false) ? substr($segments[1], 1) : $segments[1];
-            return get_site_url().'/'.CONTENT_DIR.'/themes/'.$theme.'/resources/assets';
-        }
-
-        return get_template_directory_uri().'/resources/assets';
-    }
-}
-
 
 /**
  * Helper function to setup assets URL with Sage workflow
@@ -50,6 +27,34 @@ if (!function_exists('asset_path'))
         return (string) new Sage\Asset($filename, $manifest);
     }
 }
+
+/**
+ * Helper function to setup assets URL
+ */
+if (!function_exists('themosis_theme_assets'))
+{
+    /**
+     * Return the application theme assets directory URL.
+     *
+     * Original assets path from Themosis is resources/assets
+     * It still original path for work but files are compiled
+     * to dist
+     *
+     * @return string
+     */
+    function themosis_theme_assets()
+    {
+        if (is_multisite() && SUBDOMAIN_INSTALL)
+        {
+            $segments = explode('themes', get_template_directory_uri());
+            $theme = (strpos($segments[1], DS) !== false) ? substr($segments[1], 1) : $segments[1];
+            return get_site_url().'/'.CONTENT_DIR.'/themes/'.$theme.'/dist';
+        }
+
+        return get_template_directory_uri().'/dist';
+    }
+}
+
 
 
 /**

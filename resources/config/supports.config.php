@@ -28,6 +28,38 @@ return [
 	/* --------------------------------------------------------------- */
 	'html5' => ['comment-list', 'comment-form', 'search-form', 'gallery', 'caption'],
 
+
+    /* --------------------------------------------------------------- */
+    // Enable Soil Plugin features
+    /* --------------------------------------------------------------- */
+
+    // Cleaner WordPress markup
+    'soil-clean-up',
+
+    //Disable asset versioning
+    'soil-disable-asset-versioning',
+
+    //Disable trackbacks
+    'soil-disable-trackbacks',
+
+    //Google Analytics (more info)
+    //'soil-google-analytics' => ['UA-XXXXX-Y'],
+
+    //Load jQuery from the jQuery CDN
+    'soil-jquery-cdn',
+
+    //Move all JS to the footer
+    'soil-js-to-footer',
+
+    //Cleaner walker for navigation menus
+    // 'soil-nav-walker',
+
+    //Convert search results from /?s=query to /search/query/
+    'soil-nice-search',
+
+    //Root relative URLs
+    'soil-relative-urls',
+
 	/* --------------------------------------------------------------- */
 	// Enable feed links in head
 	/* --------------------------------------------------------------- */

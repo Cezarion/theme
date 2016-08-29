@@ -1,7 +1,4 @@
 <?php
-use Roots\Sage\Asset;
-use Roots\Sage\Assets\JsonManifest;
-
 /**
  * Page titles
  * @return string
