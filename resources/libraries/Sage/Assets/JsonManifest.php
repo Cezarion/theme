@@ -1,5 +1,5 @@
 <?php namespace Roots\Sage\Assets;
-die('popo');
+
 /**
  * Class JsonManifest
  * @package Roots\Sage
