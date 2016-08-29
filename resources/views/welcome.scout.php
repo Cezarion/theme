@@ -1,5 +1,5 @@
 @extends('layouts.base')
 
 @section('content')
-    Welcome Home !
+    <p>Welcome Home !</p>
 @stop

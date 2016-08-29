@@ -8,6 +8,9 @@ import common from './routes/Common';
 import home from './routes/Home';
 import about_us from './routes/About';
 
+// Import unreferenced images
+import '../images/logo.jpg';
+
 // Use this variable to set up the common and page specific functions. If you
 // rename this variable, you will also need to rename the namespace below.
 const routes = {

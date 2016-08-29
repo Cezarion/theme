@@ -9,6 +9,6 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/content/themes/code/dist/",
+  "publicPath": "/content/themes/code",
   "devUrl": "http://example.dev"
 }
