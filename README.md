@@ -1,8 +1,6 @@
 # Themosis framework And Roots Sage Front Workflow
 
-## Roots 
-
-### [Themosis](http://framework.themosis.com/)
+## [Themosis](http://framework.themosis.com/)
 
 The Themosis framework is a tool aimed to WordPress developers of any levels. But the better WordPress and PHP knowledge you have the easier it is to work with.
 
@@ -10,7 +8,7 @@ Themosis framework is a tool to help you develop websites and web applications f
 
 The framework was created by [Julien Lambé](http://www.themosis.com/), who continues to lead the development.
 
-#### Contributing
+### Contributing
 
 Any help is appreciated. The project is open-source and we encourage you to participate. You can contribute to the project in multiple ways by:
 
@@ -23,11 +21,11 @@ Any help is appreciated. The project is open-source and we encourage you to part
 
 For details about contributing to the framework, please check the [contribution guide](http://framework.themosis.com/docs/contributing/).
 
-#### License
+### License
 
 The Themosis framework is open-source software licensed under [GPL-2+ license](http://www.gnu.org/licenses/gpl-2.0.html).
 
-### [Sage](https://roots.io/sage/)
+## [Sage](https://roots.io/sage/)
 
 
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
@@ -37,15 +35,15 @@ Sage is a WordPress starter theme with a modern development workflow.
 
 Write stylesheets with Sass, automatically check your JavaScript for errors, optimize images, enable synchronized browser testing, and more.
 
-#### Documentation
+### Documentation
 
 Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
 
-#### Contributing
+### Contributing
 
 Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
 
-#### Community
+### Community
 
 Keep track of development and community news.
 
@@ -211,6 +209,13 @@ See a complete working example in the [roots-example-project.com repo](https://g
 ## Theme setup
 
 @TODO
+
+NB: Only files referenced in js files or scss files are copied into dist
+To force it : 
+```javascript
+// Import unreferenced images
+import '../images/logo.jpg';
+```
 
 ## Theme development
 
