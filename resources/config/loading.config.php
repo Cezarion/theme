@@ -10,6 +10,7 @@ return [
     */
     ''  => [ themosis_path('theme').'controllers',
              themosis_path('theme').'models',
+             themosis_path('theme').'libraries',
            ],
     'Roots\\Sage\\' => [
         themosis_path('theme').'libraries/Sage',
