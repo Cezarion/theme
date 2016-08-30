@@ -3,8 +3,12 @@
 {{-- header --}}
 @include('common.header')
     {{-- main part --}}
-    <div class="main-wrapper">
-        @yield('content')
+    <div class="wrap container" role="document">
+        <div class="content row">
+            <main class="main">
+                @yield('content')
+            </main>
+        </div>
     </div>
 {{-- footer --}}
 @include('common.footer')

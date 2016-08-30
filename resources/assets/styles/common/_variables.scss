@@ -1,14 +1,85 @@
-// Grid settings
-$enable-flex:           true;
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
-
-// Colors
-$brand-primary:         #27ae60;
-
+//
+// VARIABLE FONT
+//
 // Font Awesome | see: http://fontawesome.io/get-started/
 $fa-font-path:          '~font-awesome/fonts';
 
 // Sticky size variables
 $sticky_size: 25Opx;
 $navbar-height-header: 5Opx;
+
+// Font family
+
+
+
+// Font size
+$primary-title:         3.75em;  // 60pt
+$secondary-title:       3.125em; // 50pt
+$tertiary-title:        2.5em;   // 40pt
+$quaternary-title:      1.875em; // 30pt
+$quinary-title:         1.25em;  // 20pt
+
+$paragraphe :           1em;     // 16pt
+
+$menu-font-size:        0.875em;
+$menu-font-weight:      100;
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%); // #222
+$gray-dark:              lighten($gray-base, 20%);   // #333
+$gray:                   lighten($gray-base, 33.5%); // #555
+$gray-light:             lighten($gray-base, 46.7%); // #777
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee
+
+$brand-primary:         darken(#428bca, 6.5%); // #337ab7
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
+
+
+$twitter-color:     #00aced;
+$facebook-color:    #3B5998;
+$linkedin-color:    #007bb6;
+
+// Navbar
+$navbar-height:                     35px !default;
+$navbar-default-color:              #ffffff !default;
+$navbar-default-bg:                 #ffffff !default;
+$navbar-border-radius:              0 !default;
+//$navbar-default-link-color:         $black !default;
+//$navbar-default-link-hover-bg:      $red !default;
+$navbar-default-link-hover-color:   #ffffff !default;
+$navbar-default-link-active-bg:     rgb(237,237,237) !default;
+//$navbar-default-link-active-color:  $black !default;
+$navbar-margin-bottom:              0 !default;
+
+// Links
+//$link-color:            $red !default;
+//$link-hover-color:      $red !default;
+//$link-hover-decoration: none !default;
+
+
+// Transition
+$transition: all 0.5s ease-in-out;
+
+// Badges
+
+
+
+//== Components
+//
+//
+$border-radius-base:        0 !default;
+$border-radius-large:       0 !default;
+$border-radius-small:       0 !default;

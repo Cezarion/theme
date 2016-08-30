@@ -52,7 +52,7 @@ return [
     'soil-js-to-footer',
 
     //Cleaner walker for navigation menus
-    // 'soil-nav-walker',
+    'soil-nav-walker',
 
     //Convert search results from /?s=query to /search/query/
     'soil-nice-search',

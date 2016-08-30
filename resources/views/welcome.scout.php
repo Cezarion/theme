@@ -1,5 +1,16 @@
 @extends('layouts.base')
 
 @section('content')
-    <p>Welcome Home !</p>
+    @include('partials.page-header')
+
+    @if (!have_posts())
+        <div class="alert alert-warning">
+            {{ _e('Sorry, no results were found.', THEMOSIS_TEXTDOMAIN) }}
+        </div>
+       {{ get_search_form() }}
+   @endif
+
+    @loop
+        @include('partials.content')
+    @endloop
 @stop
